@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#DA000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the Species Type"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:fontFamily="@font/alike"
+        android:textColor="@color/gold"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/species_selection"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/alert_spinner"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/other_catla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total No. of Fingerlings"
+                android:layout_marginLeft="2dp"
+                android:gravity="center|center_horizontal"
+                android:fontFamily="@font/alike"
+                android:textColor="@color/gold"
+                android:layout_marginBottom="4dp"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/total_fingerlings_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edittext_border_color"
+                android:maxLength="5"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/total_kg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|bottom"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txt_no_of_fingerlings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/alike"
+                android:gravity="center|center_horizontal"
+                android:text="No. of Fingerlings/kg"
+                android:textColor="@color/gold"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/fingerlings_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edittext_border_color"
+                android:maxLength="3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_total_kgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total No. of Kgs"
+                android:layout_marginLeft="2dp"
+                android:gravity="center|center_horizontal"
+                android:fontFamily="@font/alike"
+                android:textColor="@color/gold"
+                android:layout_marginBottom="4dp"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/total_kgs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:background="@drawable/edittext_border_color"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txt_total_no_kgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total No. of Fingerlings"
+                android:layout_marginLeft="2dp"
+                android:gravity="center|center_horizontal"
+                android:fontFamily="@font/alike"
+                android:textColor="@color/gold"
+                android:layout_marginBottom="4dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/total_fingerlings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edittext_border_color"
+                android:maxLength="5"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_modulee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="3dp">
+    <TextView
+        android:id="@+id/txt_vehicle_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter The Vehicle Number"
+        android:layout_marginLeft="5dp"
+        android:gravity="center|left"
+        android:fontFamily="@font/alike"
+        android:textColor="@color/gold"
+        android:layout_marginBottom="4dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/vehicleno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:inputType="textCapCharacters"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:background="@drawable/edittext_border_color" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/close_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/lite_blue"
+                android:fontFamily="@font/happy_monkey"
+                android:gravity="center"
+                android:text="@string/CLOSE"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@color/lite_blue"
+                android:fontFamily="@font/happy_monkey"
+                android:gravity="center"
+                android:text="@string/SUBMIT"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

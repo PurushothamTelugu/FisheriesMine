@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FishriesCopy</string>
+    <string name="ADD">ADD DETAILS</string>
+
+    <string name="CLOSE">CLOSE</string>
+
+    <string name="SUBMIT">SUBMIT</string>
+
+    <string name="GET">ENTER DETAILS</string>
+
+    <string name="FISHSEED">Fish Seed Stocking</string>
+
+    <string name="CULTURETYPE">Culture Type</string>
+
+    <string name="FINYEAR">Fin. Year</string>
+
+    <string name="SEASONALITY">Seasonality</string>
+
+    <string name="PRIMARYMANDAL">Primary Mandal</string>
+
+    <string name="PRIMARYVILLAGE">Primary Village</string>
+
+    <string name="INTENDEDWATERBODY">Intended Water Body</string>
+
+    <string name="INTENDEDSUPPLY">Intended Supplier</string>
+
+    <string name="SUPPLIERSEED">Supplier Seed Intended</string>
+
+    <string name="LEFTOVER">Leftover Stocking Quantity for supplier</string>
+
+    <string name="CAPTURE">CAPTURE SEED STOCKING CERTIFICATE FOR ABOVE ENTERED DATA</string>
+
+    <string name="ERROR">You don\'t have any Water Bodies in this Village</string>
+
+    <string name="ERROR_LEFTOVER">There will be no pending stock from this supplier</string>
+</resources>
